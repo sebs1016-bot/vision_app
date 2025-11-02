@@ -7,6 +7,16 @@ from openai import OpenAI
 def encode_image(image_file):
     return base64.b64encode(image_file.getvalue()).decode("utf-8")
 
+st.markdown("""
+<style>
+.stApp {
+    background: linear-gradient(135deg, #89f7fe, #66a6ff, #fbd3e9);
+    color: #222;
+    font-family: 'Quicksand', sans-serif;
+}
+</style>
+""", unsafe_allow_html=True)
+
 
 st.set_page_config(page_title="Analisis de imagen", layout="centered", initial_sidebar_state="collapsed")
 # Streamlit page setup
